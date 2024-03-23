@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #007bff;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.car {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.car-image {
+  flex: none;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.car-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px 0 0 5px;
+  transition: transform 0.3s ease;
+}
+
+.car-image:hover img {
+  transform: scale(1.1);
+}
+
+.car-details {
+  flex: 1;
+  padding: 20px;
+}
+
+.car-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.car-description {
+  font-size: 16px;
+  color: #666666;
+  margin-bottom: 10px;
+}
+
+.car-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+@media (max-width: 480px) {
+  .car {
+    flex-direction: column;
+  }
+
+  .car-image {
+    flex: none;
+    margin-bottom: 20px;
+  }
+
+  .car-image img {
+    border-radius: 5px;
+  }
+
+  .car-details {
+    flex: none;
+    padding: 0;
+  }
+}

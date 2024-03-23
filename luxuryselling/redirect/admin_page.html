@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon1/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon1/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
+    <title>Drive O Connor/Admin Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./admin_page.css" />
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+        
+        <a href="./admin_page.html" class="active"><img src="./images/logo/jobHunt1.com.png" alt=""></a>
+        
+        <a href="#admin" class="content">Administrative</a>
+        <a href="#TermOfUse" class="content"></a>
+        <a href="./index.html" class="content"></a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+      
+   <div class="searchbar">
+    <div id="select_data">
+        <select name="selectdata" id="selectdata">
+            <option value="all_data">Select Data</option>
+            <option value="company">Data of All Cars</option>
+            <option value="user">Data of all Users</option>
+        </select>
+    </div>
+    <div id="main_searchbar">
+           <div id="bar">
+            <input type="text" placeholder="Search.." name="search" id="search_data">
+           </div>
+            <div id="btn">
+                <button id="search_btn"><i class="fa fa-search"></i></button>
+            </div>
+    </div>
+    <div id="add_page_btn">
+        <p><a href=""></a>ADD Cars</p>
+   </div>
+   </div>
+  
+   <div class="table_div">
+       <div class="comp_tbl_head"></div>
+       <div class="maincontainer"></div>
+   </div>
+   
+   <div class="pagination-wrapper" id="pagination-wrapper">Drive O Connor achieving status...</div>
+
+
+      <script src="./admin_page.js"></script>
+  </body>
+</html>
+

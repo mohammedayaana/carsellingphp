@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Existing CSS code */
+
+nav .logo img,
+footer .logo img {
+  width: auto;
+  height: 70px;
+}
+
+/* Existing CSS code */
+
+
+nav .logo h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-left: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 600;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+nav ul li a:before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #000000;
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover:before {
+  width: 100%;
+}
+
+main {
+  width: 40%;
+  margin: 50px auto;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.data {
+  text-align: center;
+}
+
+.data img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.data h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 20px auto;
+}
+
+.data ul {
+  list-style-type: disc;
+  text-align: left;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.data li {
+  font-size: 18px;
+  font-weight: 300;
+  color: #5c657c;
+  margin-top: 5px;
+}
+
+.data p {
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.fa-star {
+  color: rgb(255, 221, 0);
+  margin-right: 5px;
+}
+
+footer {
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+footer .logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+footer .logo h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+}
+
+footer p {
+  color: #5c657c;
+}
+/* Existing CSS code */
+
+.buy-now-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .buy-now-btn:hover {
+    background-color: #cc0000;
+  }
+  
+  .data {
+    text-align: center;
+  }
+  
+  /* Existing CSS code */
+  
+  

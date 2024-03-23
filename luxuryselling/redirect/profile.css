@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.profile-container {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 40px 20px;
+  max-width: 500px;
+  margin: 50px auto;
+  transform: translateY(50px);
+  opacity: 0;
+  animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.name {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #333;
+  animation: slideInFromLeft 0.5s forwards;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.bio {
+  color: #777;
+  margin-bottom: 20px;
+  animation: slideInFromRight 0.5s forwards;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.details {
+  text-align: left;
+  margin-bottom: 20px;
+  animation: slideInFromBottom 0.5s forwards;
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.details p {
+  margin-bottom: 10px;
+}
+
+.details strong {
+  font-weight: bold;
+  color: #333;
+}
+
+.social-links {
+  margin-top: 20px;
+  animation: fadeIn 0.5s forwards;
+}
+
+.social-links a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  line-height: 40px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+  animation: fadeIn 0.5s forwards;
+}
+
+.social-links i {
+  font-size: 18px;
+}
+
+.social-links a:hover {
+  background-color: #0066cc;
+}
+
+@media screen and (max-width: 500px) {
+  .profile-container {
+    padding: 30px 15px;
+  }
+  
+  .name {
+    font-size: 24px;
+  }
+  
+  .bio {
+    font-size: 14px;
+  }
+  
+  .details p {
+    font-size: 14px;
+  }
+}
